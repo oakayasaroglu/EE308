@@ -1,0 +1,93 @@
+How many bits in a UART data frame?
+A. 6
+B. 8
+C. 10
+D. 12
+ANSWER: B
+
+What are the values of start and stop bits?
+A. Start=0 Stop=0
+B. Start=0 Stop=1
+C. Start=1 Stop=0
+D. Start=1 Stop=1
+ANSWER: B
+
+Baudrate = 1/(time difference between end of nth and n+1th bits' signal in a frame) [T/F]?
+A. True
+B. False
+ANSWER: A
+
+What is the exact meaning of TXFF flag is "1"?
+A. FIFO is full.
+B. FIFO isn't full.
+C. FIFO isn't empty.
+D. FIFO is empty.
+ANSWER: A
+
+What is the exact meaning of TXFF flag is "0"?
+A. FIFO is full.
+B. FIFO isn't full.
+C. FIFO isn't empty.
+D. FIFO is empty.
+ANSWER: B
+
+What is the exact meaning of RXFE flag is "1"?
+A. FIFO is full.
+B. FIFO isn't full.
+C. FIFO isn't empty.
+D. FIFO is empty.
+ANSWER: D
+
+What is the exact meaning of RXFE flag is "0"?
+A. FIFO is full.
+B. FIFO isn't full.
+C. FIFO isn't empty.
+D. FIFO is empty.
+ANSWER: C
+
+If baudrate is very high which type of error stops the data transfer?
+A. Overrun Error
+B. Break Error
+C. Frame Error
+D. Parity Error
+ANSWER: A
+
+What is the formula of IBRD?
+A. 16*Baudrate/Clock Frequency
+B. 16/(Clock Frequency*Baudrate)
+C. Clock Frequency/(16*Baudrate)
+D. Baudrate/(16*Clock Frequency)
+E. 16*Clock Frequency/Baudrate
+F. Clock Frequency*Baudrate/16
+ANSWER: C
+
+If "Y" is a decimal digit, what is the Y's ASCII response?
+A. 0x0Y;
+B. 0x1Y;
+C. 0x2Y;
+D. 0x3Y;
+E. 0x4Y;
+F. 0x5Y;
+ANSWER: D
+
+Which register holds datas that transmitting or receiving by UART1?
+A. UART1_IBRD_R
+B. UART1_LCRH_R
+C. UART1_FBRD_R
+D. UART1_DR_R
+ANSWER: D
+
+Which register holds OE,BE,PE,FE flags for UART1?
+A. UART1_IBRD_R
+B. UART1_LCRH_R
+C. UART1_FBRD_R
+D. UART1_DR_R
+ANSWER: D
+
+How can you reach to TXFF flag for UART1?
+A. (UART1_FR_R*0x03)
+B. (UART1_FR_R*0x04)
+C. (UART1_FR_R*0x05)
+D. (UART1_FR_R*0x06)
+E. (UART1_FR_R*0x07)
+ANSWER: C

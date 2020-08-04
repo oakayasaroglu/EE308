@@ -1,0 +1,199 @@
+MOV r1,#4; Which is true?
+A. r1=~4
+B. r1=4
+ANSWER: B
+
+MVN r2,r1; Which is true?
+A. r2=~r1
+B. r1=r1
+ANSWER: A
+
+ADD r1,r2,#5; Which is true?
+A. r1=r2+5
+B. r2=r1+5
+C. r1=r2-5
+D. r2=r1-5
+ANSWER: A
+
+SUB r1,r2,#6; Which is true?
+A. r1=r2+6
+B. r2=r1+6
+C. r1=r2-6
+D. r2=r1-6
+ANSWER: C
+
+RSB r1,r2,#7; Which is true?
+A. r2=7-r1
+B. r1=r2-7
+C. r2=r1-7
+D. r1=7-r2
+ANSWER: D
+
+AND r1,r2,~r2; r1=?
+A. r2
+B. ~r2
+C. 0
+D. 1
+ANSWER: C
+
+EOR r1,#7,#3; r1=?
+A. 0
+B. 2
+C. 4
+D. 6
+ANSWER: C
+
+ORR r1,#0x4B,#0x2F; r1=?
+A. 0x1A
+B. 0x2B
+C. 0x3C
+D. 0x4D
+E. 0x5E
+F. 0x6F
+ANSWER: F
+
+line 1: MOV r1, #3; line 2: MOV r2,#13; line 3: BIC r0,r1,r2; r0=?
+A. 0
+B. 1
+C. 2
+D. 3
+ANSWER: B
+
+MUL r1,#3,#2; r1=?
+A. 0
+B. 1
+C. 5
+D. 6
+E. 7
+ANSWER: D
+
+MLA r2,#3,#2,#1; r2=?
+A. 0
+B. 1
+C. 5
+D. 6
+E. 7
+ANSWER: E
+
+How to do r1=r2/2 operation in Assembly?
+A. MOV r1,r2,ASR #1
+B. MOV r1,r2,ASR #2
+C. MOV r1,r2,LSL #1
+D. MOV r1,r2,LSL #2
+ANSWER: A
+
+How to do r1=8r3-r2 operation in Assembly?
+A. SUB r1,r2,r3,ASR #3
+B. SUB r1,r2,r3,LSL #3
+C. RSB r1,r2,r3,ASR #3
+D. RSB r1,r2,r3,LSL #3
+ANSWER: D
+
+If the Carry Flag is "1", ADC r0,r0,#4; r0=?
+A. r0=r0+4
+B. r0=r0+5
+C. r0=r0+14
+D. r0=r0+15
+ANSWER: B
+
+Which flag is setting by CMP?
+A. Z
+B. V
+C. N
+ANSWER: A
+
+CMP #0,#0; BNE can work. True or False?
+A. True
+B. False
+ANSWER: B
+
+CMP #5,#3; BLE can work. True or False?
+A. True
+B. False
+ANSWER: A
+
+CMP #2,#2; BLE works, BL doesn't work. True or False?
+A. True
+B. False
+ANSWER: A
+
+LDR loads data to register from memory. True or False?
+A. True
+B. False
+ANSWER: A
+
+STR stores data to memory from register. True or False?
+A. True
+B. False
+ANSWER: A
+
+LDR r0,[r1]; What is [r1]?
+A. Register
+B. Memory Adress
+C. Flag
+D. Instruction
+ANSWER: B
+
+Which works faster?
+A. MOVE
+B. MOVEQ
+ANSWER: B
+
+line 1: CMP #0,#1; line 2: ADDGT r1,r1,#1; r1=?
+A. r1=r1
+B. r1=r1+1
+C. r1=r1+2
+D. r1=r1+3
+ANSWER: A
+
+line 1: CMP #1,#0; line 2: ADDGT r1,r1,#1; r1=?
+A. r1=r1
+B. r1=r1+1
+C. r1=r1+2
+D. r1=r1+3
+ANSWER: B
+
+SUBS instruction does just substraction. True or False?
+A. True
+B. False
+ANSWER: B
+
+SUBS instruction does substraction and sets flags too. True or False?
+A. True
+B. False
+ANSWER: A
+
+line 1: MOV r0,#0x54321067; line 2: RBIT r1,r0; r1=?
+A. 0xF7195D3B
+B. 0xE6084C2A
+C. 0xD5F73B19
+D. 0xC4E62A08
+ANSWER: B
+
+line 1: MOV r0,#0xABCD; line 2: REV r1,r0; r1=?
+A. ABCD
+B. BCAD
+C. DCBA
+D. CABD
+ANSWER: C
+
+line 1: CMP #1,#2; line 2: SUBLT r1,r1,#1; line 3: SUBLE r2,r2,#2; r1+r2=?
+A. r1+r2
+B. r1+r2-1
+C. r1+r2-2
+D. r1+r2-3
+ANSWER: D
+
+line 1: CMP #1,#1; line 2: SUBLT r1,r1,#1; line 3: SUBLE r2,r2,#2; r1+r2=?
+A. r1+r2
+B. r1+r2-1
+C. r1+r2-2
+D. r1+r2-3
+ANSWER: C
+
+line 1: CMP #1,#0; line 2: SUBLT r1,r1,#1; line 3: SUBLE r2,r2,#2; r1+r2=?
+A. r1+r2
+B. r1+r2-1
+C. r1+r2-2
+D. r1+r2-3
+ANSWER: A

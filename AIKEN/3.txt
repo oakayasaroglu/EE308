@@ -1,0 +1,70 @@
+What is the mean of "volatile" in C?
+A. Register is constant
+B. Register can change any time
+Answer: B
+
+Which operator can set every bit to "1"?
+A. AND
+B. OR
+C. XOR
+Answer: B
+
+Which operator can reset every bit to "0"?
+A. AND
+B. OR
+C. XOR
+Answer: A
+
+Which operator can toggle every bit's value?
+A. AND
+B. OR
+C. XOR
+Answer: C
+
+(2<<3)=?
+A. 0x08
+B. 0x10
+C. 0x20
+D. 0x40
+Answer: B
+
+What is the GPIO_PORTB_DIR_R inside of tm4c123gh6pm.h library?
+A. Direction register's address of Port B for tm4c123gh6pm uP
+B. Digital enable register's address of Port B for tm4c123gh6pm uP
+C. Analog mode register's address of Port B for tm4c123gh6pm uP
+D. Analog Function register's address of Port B for tm4c123gh6pm uP
+Answer: A
+
+What is the GPIO_PORTA_DEN_R inside of tm4c123gh6pm.h library?
+A. Direction register's address of Port A for tm4c123gh6pm uP
+B. Digital enable register's address of Port A for tm4c123gh6pm uP
+C. Analog mode register's address of Port A for tm4c123gh6pm uP
+D. Analog function register's address of Port A for tm4c123gh6pm uP
+Answer: B
+
+What is the GPIO_PORTB_AMSEL_R inside of tm4c123gh6pm.h library?
+A. Direction register's address of Port B for tm4c123gh6pm uP
+B. Digital enable register's address of Port B for tm4c123gh6pm uP
+C. Analog mode selection register's address of Port B for tm4c123gh6pm uP
+D. Analog function selection register's address of Port B for tm4c123gh6pm uP
+Answer: C
+
+What is the GPIO_PORTA_AFSEL_R inside of tm4c123gh6pm.h library?
+A. Direction register's address of Port A for tm4c123gh6pm uP
+B. Digital enable register's address of Port A for tm4c123gh6pm uP
+C. Analog mode register's address of Port A for tm4c123gh6pm uP
+D. Analog function register's address of Port A for tm4c123gh6pm uP
+Answer: D
+
+How to activate clock for port D in C language?
+A. SYSCTL_RCGCGPIO_R = SYSCTL_RCGCGPIO_R | 0x04
+B. SYSCTL_RCGCGPIO_R = SYSCTL_RCGCGPIO_R | 0x20
+C. SYSCTL_RCGCGPIO_R = SYSCTL_RCGCGPIO_R | 0x10
+D. SYSCTL_RCGCGPIO_R = SYSCTL_RCGCGPIO_R | 0x08
+Answer: D
+
+Which is true if "pc" is the pointer address of "c"?
+A. pc=c
+B. *pc=&c
+C. pc=&c
+Answer: C
